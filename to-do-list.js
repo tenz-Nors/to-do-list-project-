@@ -27,9 +27,11 @@ function renderTodoList() {
     const { name, dueDate } = todoObject;
 
     const html = `
-      <p>${name} - Due Date: ${dueDate}
-        <button onclick="deleteTodo(${i})">Delete</button>
-      </p>
+      <div>${name}</div> 
+      <div>  Due Date: ${dueDate} </div>
+      <button class="delete-button" onclick="deleteTodo(${i})">
+      Delete
+      </button>
     `;
 
     todoListHTML += html;
